@@ -20,6 +20,7 @@
     background-position: center;
     width: 100%;
     height: 100vh;
+    margin-top: 10px;
 }
 
 header{
@@ -37,7 +38,6 @@ aside{
     right: 0;
     display: flex;
     overflow: hidden;
-
 }
 
 .cabeçalho-link{
@@ -54,16 +54,16 @@ aside{
 
 .cabeçalho-link a:hover{
     border: solid 1px rgb(253, 253, 253);
-    padding: 7px;
+    padding: 6px;
     border-radius: 15px;
     color: rgb(255, 255, 255);
     transition: 0.2s;
 }
 
 .icon-menu img{
-    width: 45px;
-    height: 45px;
-    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
     margin-top: 25px;
 }
 
@@ -95,7 +95,7 @@ aside{
 }
 
 button{
-    color: #fff;
+    color:  rgb(31, 28, 89);
     background: transparent;
     border: solid 1px #fff;
     padding: 5px;
@@ -112,7 +112,7 @@ button:hover{
  }
 
  .container-text{
-    padding: 100px 0 0 130px;
+    padding: 100px ;
  }
 
  .text h3{
@@ -167,17 +167,13 @@ button:hover{
 
 @media  screen and (max-width: 420px) {
 
-    body{
-        overflow: hidden;
-    }
-
     .background{
-       
+        background-image: url(agora_vai.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         height: 100vh;
-        width: 245%;
+        width: 100%;
         
     }
     .numeros h3{
@@ -187,14 +183,22 @@ button:hover{
         font-size: 20px;
     }
 
+    
+
 }
+
+
+
+   
+
 
 /*===========QUEM-SOMOS==========*/
 
 .C-sobre{
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
-    padding: 800px 0px;
+    padding: 100px;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -209,10 +213,12 @@ button:hover{
     text-align: center;
     font-size: 55px;
     font-weight: bold;
+    color: #000000;
+    text-shadow: 4px 4px 4px #b6b6b6, 4px 4px 4px; 
 }
 
 .Quem-somos span{
-    color: #858585;
+    color: #000000;
 }
 
 .Quem-somos p{
@@ -267,10 +273,168 @@ button:hover{
 
 }
 
+/*===========Cachorros-para-adoção==========*/
+
+
+.C-cachorros{
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-around;
+    padding: 200px;
+    width: 100%;
+    background-color: #6aadb5;
+    flex-wrap: wrap;
+}
+
+.image img{
+    width: 300px;
+    height: auto;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px; 
+}
+
+.Cachorros-para-adoção h1{
+    margin-left: 1%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Cachorros-para-adoção p{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.Cachorros-para-adoção button{
+    background-color: rgb(31, 28, 89);
+    margin-left: 40%;
+    margin-top: 30px;
+    padding: 4px 40px;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #858585 4px 4px 4px;
+    transition-duration: 2s;
+}
+
+.Cachorros-para-adoção button:hover{
+    color: #858585;
+    background: transparent;
+    transition: 2s;
+}
+
+@media screen and (max-width: 420px) {
+    .image img{
+        margin-top: 80px;
+        width: 300px;
+        height: auto;
+    }
+
+    .Cachorros-para-adoção h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .Cachorros-para-adoção p{
+        font-size: 12px;
+        width: 300px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .Cachorros-para-adoção button{
+        margin-left: 20%;
+        position: center;
+        
+    }
+
+}
+
+
+/*===========Gatos-para-adoção==========*/
+
+
+.C-gatos{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    padding: 120px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.image img{
+    width: 400px;
+    height: auto;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px; 
+}
+
+.Gatos-para-adoção h1{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.Gatos-para-adoção p{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.Gatos-para-adoção button{
+    background-color: rgb(31, 28, 89);
+    margin-left: 35%;
+    margin-top: 30px;
+    padding: 4px 40px;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #858585 4px 4px 4px;
+    transition-duration: 2s;
+}
+
+.Gatos-para-adoção button:hover{
+    color: #858585;
+    background: transparent;
+    transition: 2s;
+}
+
+@media screen and (max-width: 420px) {
+    .image img{
+        margin-top: 80px;
+        width: 350px;
+        height: auto;
+    }
+
+    .Gatos-para-adoção h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .Gatos-para-adoção p{
+        font-size: 12px;
+        width: 300px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .Gatos-para-adoção button{
+        margin-left: 20%;
+        position: center;
+        
+    }
+
+}
+
 /*===========SERVIÇOS==========*/
 
 
 .container{
+    margin-top: 220px;
     width: 100%;
     background-color: #F3EEEE;
     padding: 50px;
@@ -280,15 +444,16 @@ button:hover{
     text-align: center;
     font-size: 60px;
     font-family: "Poppins", sans-serif;
-    padding-top: 12%;
+    padding-top: 5%;
 }
 
 .container p{
     text-align: center;
+    margin-left: 35px;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: #403939;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 .container button{
@@ -315,7 +480,7 @@ button:hover{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 35%;
+    margin-top: 5%;
     text-align: center;
     flex-wrap: wrap;
 }
