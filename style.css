@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/*===========Inicio==========*/
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: url(socializar-gato-cachorro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+aside{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cabeçalho-link a{
+    color: rgb(31, 28, 89);
+    font-size: 12px;
+}
+
+.cabeçalho-link a:hover{
+    border: solid 1px rgb(253, 253, 253);
+    padding: 7px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+.icon-menu img{
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+#barra-menu {
+    background: rgb(31, 28, 89);
+    height: 100vh;
+    width: 0px;
+    transition: 0.3s all;
+}
+
+#barra-menu ul li {
+    list-style: none;
+    padding: 15px;
+
+}
+
+#barra-menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    width: 100%;
+}
+
+#barra-menu ul li a:hover{
+    border: solid 1px #0000; 
+    padding: 8px;
+    border-radius: 15px;
+    background:  #858585;
+}
+
+button{
+    color: #fff;
+    background: transparent;
+    border: solid 1px #fff;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 150px;
+    cursor: pointer;
+ }
+
+button:hover{
+    background-color: rgb(31, 28, 89);
+    color: #fff;
+    transition: 0.5s;
+ }
+
+ .container-text{
+    padding: 100px 0 0 130px;
+ }
+
+ .text h3{
+    color: #fff;
+    font-size: 15px;
+ }
+
+ .text h1{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.text span{
+    color: rgb(31, 28, 89);
+}
+
+.text p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.redes-sociais a{
+    color: rgb(31, 28, 89);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.numeros{
+    display: flex;
+    margin-top: 35px;
+    color: rgb(31, 28, 89);
+    gap: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.title h3{
+    font-size: 35px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.title p{
+    font-weight: normal;
+}
+
+@media  screen and (max-width: 420px) {
+
+    body{
+        overflow: hidden;
+    }
+
+    .background{
+       
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        width: 245%;
+        
+    }
+    .numeros h3{
+        color: #fff;
+        margin-right: 5px;
+        margin-top: -25px;
+        font-size: 20px;
+    }
+
+}
+
+/*===========QUEM-SOMOS==========*/
+
+.C-sobre{
+    display: flex;
+    justify-content: space-around;
+    padding: 800px 0px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.image img{
+    width: 500px;
+    height: auto;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px; 
+}
+
+.Quem-somos h1{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.Quem-somos span{
+    color: #858585;
+}
+
+.Quem-somos p{
+    margin-top: 25px;
+}
+
+.Quem-somos button{
+    background-color: rgb(31, 28, 89);
+    margin-left: 35%;
+    margin-top: 30px;
+    padding: 4px 40px;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #858585 4px 4px 4px;
+    transition-duration: 2s;
+}
+
+.Quem-somos button:hover{
+    color: #858585;
+    background: transparent;
+    transition: 2s;
+}
+
+@media screen and (max-width: 420px) {
+    .image img{
+        margin-top: 80px;
+        width: 350px;
+        height: auto;
+    }
+
+    .Quem-somos h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .Quem-somos p{
+        font-size: 12px;
+        width: 300px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .Quem-somos button{
+        margin-left: 20%;
+        position: center;
+        
+    }
+
+}
+
+/*===========SERVIÇOS==========*/
+
+
+.container{
+    width: 100%;
+    background-color: #F3EEEE;
+    padding: 50px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 12%;
+}
+
+.container p{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #403939;
+    margin-top: 25px;
+}
+
+.container button{
+    background-color: rgb(31, 28, 89);
+    margin-left: 45%;
+    margin-top: 25px;
+    padding: 4px 40px;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #858585 4px 4px 4px;
+    transition-duration: 2s;
+}
+
+.container button:hover{
+    color: #858585;
+    background: transparent;
+    transition: 2s;
+}
+
+.C-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #FFFBFB;
+    padding: 50px;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px;
+    margin-top: 25px;
+}
+
+.card img{
+    width: 60px;
+    height: auto;
+}
+
+.C-card-2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card h3{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.card h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    color: #342d2d;
+    margin-top: 15px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition-duration: .8s ;
+}
+
+@media screen and (max-width: 420px) {
+    .card{
+        margin-top: 35px;
+    }
+
+    .C-card-2{
+        margin-top: 35px;
+    }
+
+    .container p{
+        font-size: 15px;
+        width: 300px;
+        padding: 1px;
+        text-align: justify;
+    }
+}
+
+
+/*--------------highlights--------------*/
+
+.C-projetos{
+    width: 100%;
+    background-color: #fff;
+    padding: 100px;
+}
+
+.C-projetos h1{
+    text-align: center;
+    font-size: 65px;
+    font-family: "Inria Sans";
+    font-weight: bold;
+    padding: 2%;
+}
+
+.C-projetos p{
+    text-align: center;
+    font-family: "Inria Sans";
+    color: #685b5b;
+    font-weight: lighter;
+    margin-top: 2px;
+}
